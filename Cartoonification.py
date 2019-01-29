@@ -30,13 +30,13 @@ def RGB_to_greyscale(image):
         display_image(greyImage)
     return greyImage
 
-def blur_image(image, ksize = 19):
+def blur_image(image, ksize = 7):
     """
     Blurs an image using a median filter.
     :param image:
         The image to Blur as a numpy array.
     :param ksize:
-        The size of the mask, default is 19.
+        The size of the mask, default is 7.
     :return:
         The blurred image.
     """
@@ -109,7 +109,7 @@ def add_images(image, mask):
     return finalImage
 
 # read the image.
-image = cv.imread("image.jpg", 1)
+image = cv.imread("image2.jpg", 1)
 display_image(image)
 
 # apply the cartoon effect.
